@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Casa Verdés | Alojamiento rural con encanto en la Ribeira Sacra</title>
+  <meta name="description" content="Casa Verdés: casa rural de piedra restaurada en la Ribeira Sacra. Cuatro estancias con vistas al valle, desayuno casero y silencio. Reserva directa sin intermediarios." />
+  <meta name="theme-color" content="#1f231d" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Casa Verdés | Alojamiento rural con encanto" />
+  <meta property="og:description" content="Una casa de piedra restaurada frente al valle. Cuatro estancias, desayuno casero y silencio." />
+  <meta property="og:locale" content="es_ES" />
+  <!-- Cambiar por la URL absoluta al publicar (ver PUBLICAR.md, paso 4) -->
+  <meta property="og:image" content="img/hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231f231d'/%3E%3Cpath d='M4 14 L12 6 l8 8' fill='none' stroke='%23c9a97a' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.5 13.5V19h11v-5.5' fill='none' stroke='%23c9a97a' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <!-- Sprite de iconos -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 L8 12 L15 19"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5 L16 12 L9 19"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></symbol>
+  </svg>
+
+  <header class="site-header" id="header">
+    <div class="container site-header__inner">
+      <a href="#inicio" class="brand">
+        <span class="brand__name">Casa Verdés</span>
+        <span class="brand__tag">Ribeira Sacra</span>
+      </a>
+
+      <!-- Una sola navegación: en escritorio es la barra horizontal y en
+           móvil (< 960px) el CSS la convierte en un panel lateral. -->
+      <nav class="site-nav" id="menu" aria-label="Navegación principal">
+        <ul class="site-nav__list">
+          <li><a href="#la-casa">La casa</a></li>
+          <li><a href="#estancias">Estancias</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#entorno">El entorno</a></li>
+        </ul>
+
+        <a href="#reservar" class="btn site-nav__cta">Reservar</a>
+
+        <!-- Solo visible en el panel móvil -->
+        <div class="site-nav__contact">
+          <p>Aldea de Verdés, 12<br />27430 Ribeira Sacra, Lugo</p>
+          <p>
+            <a href="tel:+34982123456">982 123 456</a><br />
+            <a href="mailto:ola@casaverdes.gal">ola@casaverdes.gal</a>
+          </p>
+        </div>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">
+        <span class="menu-btn__label" data-menu-label>Menú</span>
+        <span class="menu-btn__bars" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+  <main id="main">
+
+    <!-- ============ PORTADA ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__media">
+        <img src="img/hero.jpg" alt="Amanecer sobre las montañas del valle que rodea la casa" width="2000" height="1250" fetchpriority="high" />
+      </div>
+
+      <div class="container hero__inner">
+        <span class="label label--light">Alojamiento rural</span>
+        <h1 class="display-xl hero__title">Donde el valle<br />se detiene</h1>
+        <p class="hero__text">
+          Una casa de piedra del siglo XVIII restaurada sobre la ladera, con
+          cuatro estancias, desayuno casero y kilómetros de silencio alrededor.
+        </p>
+        <div class="hero__actions">
+          <a href="#reservar" class="btn btn--on-image">Consultar fechas</a>
+          <a href="#estancias" class="btn btn--on-image">Ver estancias</a>
+        </div>
+      </div>
+
+      <p class="hero__meta">
+        Ribeira Sacra · Lugo<br />
+        4 estancias · 8 huéspedes
+      </p>
+    </section>
+
+    <!-- ============ LA CASA ============ -->
+    <section class="section" id="la-casa">
+      <div class="container">
+        <div class="lede">
+          <div data-reveal>
+            <span class="label">La casa</span>
+            <hr class="rule" />
+            <p class="lede__statement">
+              Restaurada piedra a piedra por la familia que lleva cuatro
+              generaciones en esta ladera.
+            </p>
+          </div>
+
+          <div class="lede__body" data-reveal data-reveal-delay="120">
+            <p>
+              Casa Verdés no es un hotel pequeño: es una casa de labranza a la
+              que se le devolvió su forma original. Los muros, las vigas de
+              castaño y el hórreo son los de siempre. Lo que cambió fue el
+              aislamiento, la calefacción y los baños.
+            </p>
+            <p>
+              No hay televisión en las habitaciones ni recepción con horario.
+              Hay una cocina donde se desayuna sin prisa, una biblioteca con
+              chimenea y un prado que da directamente al bosque.
+            </p>
+            <p><a href="#galeria" class="link-underline">Ver la galería</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fuera del .container a propósito: la figura usa su propia retícula
+           para que la foto llegue hasta el borde derecho de la ventana. -->
+      <figure class="offset-figure">
+        <div class="offset-figure__img" data-reveal>
+          <img src="img/estancia-1.jpg" alt="Luz de la mañana entrando por la ventana del salón" loading="lazy" width="1600" height="1100" />
+        </div>
+        <figcaption class="offset-figure__caption" data-reveal data-reveal-delay="120">
+          <span class="label">Un detalle</span>
+          <hr class="rule" />
+          <p>
+            La casa mira al sureste: en invierno el sol entra hasta el fondo
+            del salón a media mañana y se queda hasta la hora de comer.
+          </p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ ESTANCIAS ============ -->
+    <section class="section section--alt" id="estancias">
+      <div class="container">
+        <div class="strip-head" data-reveal>
+          <div>
+            <span class="label">Estancias</span>
+            <h2 class="display-l">Cuatro formas de quedarse</h2>
+          </div>
+          <p class="lead" style="max-width: 34ch">
+            Todas con baño propio, ropa de cama de lino y vistas al valle o al
+            castaño centenario.
+          </p>
+        </div>
+      </div>
+
+      <div class="container features">
+        <article class="feature" data-reveal>
+          <div class="feature__media">
+            <img src="img/estancia-2.jpg" alt="Vista del valle boscoso desde la habitación Souto" loading="lazy" width="1600" height="1100" />
+          </div>
+          <div class="feature__panel">
+            <span class="label">Estancia 01</span>
+            <h3 class="display-m">Souto</h3>
+            <p>
+              La más amplia, en la esquina sur. Cama de 180, butaca junto a la
+              ventana y bañera exenta bajo la viga original.
+            </p>
+            <ul class="feature__specs">
+              <li>32 m²</li>
+              <li>2 huéspedes</li>
+              <li>Bañera exenta</li>
+              <li>Vistas al valle</li>
+            </ul>
+            <p class="feature__price">130 € <span>/ noche</span></p>
+          </div>
+        </article>
+
+        <article class="feature" data-reveal>
+          <div class="feature__media">
+            <img src="img/estancia-3.jpg" alt="Habitación Lousa con luz suave entrando por la ventana" loading="lazy" width="1600" height="1100" />
+          </div>
+          <div class="feature__panel">
+            <span class="label">Estancia 02</span>
+            <h3 class="display-m">Lousa</h3>
+            <p>
+              Bajo el alero, con techo inclinado de castaño y una ventana que
+              enmarca el hórreo. La preferida en verano por el fresco.
+            </p>
+            <ul class="feature__specs">
+              <li>24 m²</li>
+              <li>2 huéspedes</li>
+              <li>Ducha de obra</li>
+              <li>Vistas al hórreo</li>
+            </ul>
+            <p class="feature__price">105 € <span>/ noche</span></p>
+          </div>
+        </article>
+
+        <article class="feature" data-reveal>
+          <div class="feature__media">
+            <img src="img/gal-4.jpg" alt="Atardecer sobre las montañas visto desde la casa" loading="lazy" width="1600" height="900" />
+          </div>
+          <div class="feature__panel">
+            <span class="label">Estancia 03 · 04</span>
+            <h3 class="display-m">Fento y Carballo</h3>
+            <p>
+              Dos habitaciones comunicadas por un distribuidor propio. Se alquilan
+              juntas o por separado: funcionan bien para familias.
+            </p>
+            <ul class="feature__specs">
+              <li>19 m² cada una</li>
+              <li>4 huéspedes</li>
+              <li>Baño compartido</li>
+              <li>Acceso al prado</li>
+            </ul>
+            <p class="feature__price">95 € <span>/ noche cada una</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA ============ -->
+    <section class="section" id="galeria">
+      <div class="container">
+        <div class="strip-head" data-reveal>
+          <div>
+            <span class="label">Galería</span>
+            <h2 class="display-l">La casa y su valle</h2>
+          </div>
+          <p class="lead" style="max-width: 32ch">
+            Pulsa cualquier imagen para verla a pantalla completa.
+          </p>
+        </div>
+
+        <!-- El orden importa: la colocación automática de la retícula va
+             rellenando huecos, y esta secuencia cierra un rectángulo exacto
+             de 4 columnas por 3 filas sin dejar celdas vacías. -->
+        <div class="mosaic" data-reveal data-gallery>
+          <button type="button" class="mosaic__item mosaic__item--tall" data-caption="El valle al amanecer desde el prado alto">
+            <img src="img/gal-1.jpg" alt="El valle al amanecer desde el prado alto" loading="lazy" width="1200" height="1600" />
+          </button>
+          <button type="button" class="mosaic__item" data-caption="Luz de mañana en el salón">
+            <img src="img/gal-2.jpg" alt="Luz de mañana en el salón" loading="lazy" width="1200" height="900" />
+          </button>
+          <button type="button" class="mosaic__item" data-caption="Rincón de lectura junto a la ventana">
+            <img src="img/gal-3.jpg" alt="Rincón de lectura junto a la ventana" loading="lazy" width="1200" height="900" />
+          </button>
+          <button type="button" class="mosaic__item" data-caption="Niebla entre los castaños">
+            <img src="img/gal-6.jpg" alt="Niebla entre los castaños" loading="lazy" width="1200" height="900" />
+          </button>
+          <button type="button" class="mosaic__item mosaic__item--wide" data-caption="Atardecer de otoño sobre las montañas">
+            <img src="img/gal-4.jpg" alt="Atardecer de otoño sobre las montañas" loading="lazy" width="1600" height="900" />
+          </button>
+          <button type="button" class="mosaic__item" data-caption="La ladera al caer la tarde">
+            <img src="img/gal-5.jpg" alt="La ladera al caer la tarde" loading="lazy" width="900" height="1200" />
+          </button>
+          <button type="button" class="mosaic__item mosaic__item--wide" data-caption="El valle cubierto de niebla a primera hora">
+            <img src="img/gal-7.jpg" alt="El valle cubierto de niebla a primera hora" loading="lazy" width="1600" height="900" />
+          </button>
+          <button type="button" class="mosaic__item" data-caption="Las laderas de castaños en verano">
+            <img src="img/gal-8.jpg" alt="Las laderas de castaños en verano" loading="lazy" width="1200" height="900" />
+          </button>
+          <button type="button" class="mosaic__item" data-caption="Últimas luces sobre el valle">
+            <img src="img/gal-9.jpg" alt="Últimas luces sobre el valle" loading="lazy" width="1200" height="900" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CITA ============ -->
+    <figure class="quote">
+      <div class="quote__media">
+        <img src="img/cita.jpg" alt="" role="presentation" loading="lazy" width="2000" height="1000" />
+      </div>
+      <blockquote>
+        Dormimos con la ventana abierta tres noches y no oímos un solo coche.
+      </blockquote>
+      <figcaption>Marta e Iago · Octubre</figcaption>
+    </figure>
+
+    <!-- ============ ENTORNO ============ -->
+    <section class="section" id="entorno">
+      <div class="container">
+        <div class="strip-head" data-reveal>
+          <div>
+            <span class="label">El entorno</span>
+            <h2 class="display-l">Qué hay alrededor</h2>
+          </div>
+          <p class="lead" style="max-width: 34ch">
+            Todo a menos de media hora en coche, o directamente desde la puerta.
+          </p>
+        </div>
+
+        <!-- En escritorio es una rejilla de 4 columnas; en móvil pasa a tira
+             horizontal que se desliza con el dedo. tabindex="0" permite
+             recorrerla también con las flechas del teclado cuando desborda. -->
+        <p class="strip__hint" aria-hidden="true">Desliza para ver más →</p>
+        <div class="strip" tabindex="0" role="region" aria-label="Lugares del entorno">
+          <figure>
+            <img src="img/entorno-1.jpg" alt="Sendero entre la niebla junto al río" loading="lazy" width="1200" height="900" />
+            <figcaption>
+              <h3>Los cañones del Sil</h3>
+              <p>Miradores y catamarán por el cañón, con las bancadas de viñedo colgadas sobre el agua.</p>
+              <span class="strip__meta">A 20 minutos en coche</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/entorno-2.jpg" alt="Amanecer sobre el valle desde un mirador" loading="lazy" width="1200" height="900" />
+            <figcaption>
+              <h3>Bodegas de la Ribeira Sacra</h3>
+              <p>Visitas y cata en bodegas familiares de mencía, la mayoría con reserva el día antes.</p>
+              <span class="strip__meta">Entre 10 y 30 minutos</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/entorno-3.jpg" alt="Atardecer anaranjado sobre las montañas" loading="lazy" width="1200" height="900" />
+            <figcaption>
+              <h3>Rutas a pie desde la puerta</h3>
+              <p>Tres sendas señalizadas salen de la aldea: de 4, 9 y 14 km, todas circulares.</p>
+              <span class="strip__meta">Desde la casa</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="img/gal-6.jpg" alt="Bosque de castaños con niebla" loading="lazy" width="1200" height="900" />
+            <figcaption>
+              <h3>Souto de castaños centenarios</h3>
+              <p>Un bosque de castaños de más de trescientos años, a un paseo de veinte minutos.</p>
+              <span class="strip__meta">A pie, 20 minutos</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESERVAR ============ -->
+    <section class="section section--dark" id="reservar">
+      <div class="container booking">
+        <div class="booking__info" data-reveal>
+          <span class="label label--light">Reservar</span>
+          <h2 class="display-l">Escríbenos y te contamos disponibilidad</h2>
+          <p style="margin-top: 1.4rem; max-width: 42ch">
+            Reserva directa, sin intermediarios ni comisiones. Contestamos el
+            mismo día con las fechas libres y el precio cerrado.
+          </p>
+
+          <dl>
+            <div>
+              <dt>Teléfono</dt>
+              <dd><a href="tel:+34982123456" style="text-decoration: none">982 123 456</a></dd>
+            </div>
+            <div>
+              <dt>Correo</dt>
+              <dd><a href="mailto:ola@casaverdes.gal" style="text-decoration: none">ola@casaverdes.gal</a></dd>
+            </div>
+            <div>
+              <dt>Dónde estamos</dt>
+              <dd>Aldea de Verdés, 12 · 27430 Lugo</dd>
+            </div>
+            <div>
+              <dt>Estancia mínima</dt>
+              <dd>2 noches · 3 en puentes y agosto</dd>
+            </div>
+          </dl>
+        </div>
+
+        <form id="bookingForm" novalidate data-reveal data-reveal-delay="120">
+          <div class="form-grid form-grid--3">
+            <div class="field">
+              <label for="checkin">Entrada</label>
+              <input type="date" id="checkin" name="checkin" required />
+              <p class="field__error" data-error-for="checkin" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="checkout">Salida</label>
+              <input type="date" id="checkout" name="checkout" required />
+              <p class="field__error" data-error-for="checkout" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="guests">Huéspedes</label>
+              <select id="guests" name="guests" required>
+                <option value="" selected disabled>Elegir</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5 o más</option>
+              </select>
+              <p class="field__error" data-error-for="guests" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="form-grid form-grid--2" style="margin-top: 1.4rem">
+            <div class="field">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" autocomplete="name" required minlength="2" />
+              <p class="field__error" data-error-for="name" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="email">Correo</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+              <p class="field__error" data-error-for="email" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="field" style="margin-top: 1.4rem">
+            <label for="message">Cuéntanos algo más</label>
+            <textarea id="message" name="message" rows="3" placeholder="Estancia que os interesa, si venís con niños o con perro..."></textarea>
+          </div>
+
+          <div class="field field--check" style="margin-top: 1.6rem">
+            <input type="checkbox" id="privacy" name="privacy" required />
+            <label for="privacy">He leído y acepto la política de privacidad.</label>
+            <p class="field__error" data-error-for="privacy" role="alert"></p>
+          </div>
+
+          <div class="booking__submit">
+            <button type="submit" class="btn btn--light btn--block" id="submitBtn">
+              <span data-submit-label>Consultar disponibilidad</span>
+              <span class="spinner" hidden data-spinner aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <div class="form-status" data-form-status role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <h2>Casa Verdés</h2>
+          <address>
+            Aldea de Verdés, 12<br />
+            27430 Ribeira Sacra, Lugo<br />
+            <a href="tel:+34982123456">982 123 456</a><br />
+            <a href="mailto:ola@casaverdes.gal">ola@casaverdes.gal</a>
+          </address>
+        </div>
+
+        <div>
+          <h2>La casa</h2>
+          <ul>
+            <li><a href="#la-casa">Quiénes somos</a></li>
+            <li><a href="#estancias">Estancias</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#entorno">El entorno</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Antes de venir</h2>
+          <ul>
+            <li>Check-in de 16:00 a 21:00</li>
+            <li>Check-out hasta las 12:00</li>
+            <li>Se admiten perros avisando</li>
+            <li>Registro turístico VUT-LU-0000</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer-wordmark" aria-hidden="true">Verdés</p>
+
+      <div class="site-footer__legal">
+        <p>© <span data-year></span> Casa Verdés</p>
+        <nav aria-label="Legal">
+          <a href="#">Aviso legal</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Visor de imagen -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes" hidden>
+    <div class="lightbox__bar">
+      <span data-lightbox-counter>1 / 6</span>
+      <button type="button" class="lightbox__close" data-lightbox-close>
+        Cerrar
+        <svg width="18" height="18" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+
+    <div class="lightbox__stage">
+      <button type="button" class="lightbox__nav lightbox__nav--prev" data-lightbox-prev aria-label="Imagen anterior">
+        <svg width="22" height="22" aria-hidden="true"><use href="#i-arrow-left"/></svg>
+      </button>
+      <img src="" alt="" data-lightbox-img />
+      <button type="button" class="lightbox__nav lightbox__nav--next" data-lightbox-next aria-label="Imagen siguiente">
+        <svg width="22" height="22" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+      </button>
+    </div>
+
+    <p class="lightbox__caption" data-lightbox-caption></p>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
